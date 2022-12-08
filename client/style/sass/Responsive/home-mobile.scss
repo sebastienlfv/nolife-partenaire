@@ -1,0 +1,42 @@
+@media screen and (max-width: 900px) {
+  .enter-container {
+    height: 100% !important;
+
+    #myVideo {
+      min-height: auto !important;
+    }
+
+    &-content {
+      img {
+        width: 125px !important;
+        margin-top: 40px;
+      }
+
+      h1 {
+        font-size: 20px !important;
+        width: 90% !important;
+        margin-top: 40px !important;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .join-team-nolife {
+    width: 100% !important;
+    flex-direction: column;
+
+    &-info {
+      width: 90% !important;
+      margin: auto;
+      margin-left: 15px !important;
+
+      h2 {
+        font-size: 24px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+}

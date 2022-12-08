@@ -1,0 +1,103 @@
+.formulaire-container {
+  max-width: 1130px;
+  margin: auto;
+  padding-bottom: 100px;
+
+  h1 {
+    font-family: 'Oswald';
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+  .form-formulaire {
+    margin-top: 120px;
+
+    span {
+      font-size: 25px;
+      font-family: 'Oswald';
+    }
+
+    form {
+      margin-top: 20px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Oswald';
+        position: relative;
+        margin-top: 40px;
+
+        label {
+          font-size: 18px;
+
+          span {
+            color: red;
+            margin-left: 5px;
+          }
+        }
+
+        input {
+          border: 1px solid #ddd;
+          font-size: 13px;
+          padding: 15px;
+          margin-top: 15px;
+          box-sizing: border-box;
+          padding-left: 50px;
+
+          &:focus {
+            outline: none;
+            border: 1px solid #ddd;
+          }
+        }
+
+        textarea {
+          border: 1px solid #ddd;
+          font-size: 13px;
+          padding: 15px;
+          margin-top: 15px;
+          box-sizing: border-box;
+          padding-left: 50px;
+          height: 300px;
+          resize: none;
+
+          &:focus {
+            outline: none;
+            border: 1px solid #ddd;
+          }
+        }
+
+        i {
+          position: absolute;
+          top: 68px;
+          left: 10px;
+          color: #bbb;
+          border-right: 1px solid #bbb;
+          font-size: 15px;
+          padding-right: 10px;
+        }
+      }
+
+      button {
+        background-color: #ff4242;
+        border: none;
+        color: #fff;
+        margin-top: 50px;
+        padding: 8px 30px;
+        padding-right: 15px;
+        font-family: 'Oswald';
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        i {
+          margin-left: 15px;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
