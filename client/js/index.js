@@ -11,8 +11,11 @@ lvlBurger.addEventListener('mouseout', () => {
   }, 1500)
 })
 
+const ip = 'http://localhost:'
+const PORT = 3005
+
 // fetch partner
-const URL = 'http://localhost:5000/api/partner'
+const URL = ip + PORT + '/api/partner'
 
 
 fetch(URL)
