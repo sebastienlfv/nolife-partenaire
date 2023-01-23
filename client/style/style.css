@@ -1,0 +1,1207 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../src/font/Oswald.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+*::selection {
+  background-color: red;
+  color: white;
+}
+
+#nav-bar-mobile {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.push-up {
+  position: fixed;
+  font-size: 20px;
+  color: #fff;
+  bottom: 15px;
+  right: 15px;
+  background-color: #000;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.push-up:hover {
+  bottom: 25px;
+}
+
+header {
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid #d7d7d7;
+}
+header nav {
+  display: flex;
+  width: 59%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  font-size: 16px;
+}
+header nav img {
+  height: 28px;
+}
+header nav .nav-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Oswald";
+  font-weight: bold;
+  width: 70%;
+}
+header nav .nav-bar-container .lvl-burger {
+  position: relative;
+}
+header nav .nav-bar-container .lvl-burger .burger-niveau {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  top: 40px;
+  left: 0px;
+  background-color: #000;
+  align-items: flex-start;
+  width: 250px;
+  padding: 10px 20px;
+  gap: 20px;
+  font-size: 14px;
+  z-index: 99;
+}
+header nav .nav-bar-container .lvl-burger .burger-niveau a {
+  cursor: pointer;
+  color: #fff;
+}
+header nav .nav-bar-container .lvl-burger .burger-niveau a:hover {
+  color: red;
+}
+header nav .nav-bar-container a {
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  color: #000;
+}
+header nav .nav-bar-container a:hover {
+  color: red;
+}
+header nav .nav-bar-container div:nth-child(1) {
+  width: 400px;
+}
+header nav .nav-bar-container div:nth-child(2) {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+}
+header nav .nav-bar-container .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav-bar-container img {
+  width: 16px;
+  height: 11px;
+  cursor: pointer;
+}
+
+main .enter-container {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .enter-container #myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  z-index: -100;
+}
+main .enter-container-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+main .enter-container-content img {
+  width: 400px;
+}
+main .enter-container-content h1 {
+  font-size: 75px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 90px;
+  width: 70%;
+}
+main .join-team-nolife {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+main .join-team-nolife-info {
+  width: 30%;
+  margin-left: 100px;
+}
+main .join-team-nolife-info h2 {
+  font-size: 70px;
+  font-family: "Oswald";
+}
+main .join-team-nolife-info p {
+  font-size: 18px;
+  line-height: 35px;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-top: 30px;
+}
+main .join-team-nolife-info button {
+  background-color: #FF675B;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main .join-team-nolife-info button:hover {
+  background-color: #ff4b3c;
+}
+main .join-team-nolife-img {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+}
+main .join-team-nolife-img img:nth-child(1) {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  z-index: 2;
+  right: 450px;
+}
+main .join-team-nolife-img img:nth-child(2) {
+  width: 500px;
+  height: 700px;
+  position: relative;
+  z-index: 1;
+}
+main .short-team-nolife {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 150px;
+}
+main .short-team-nolife h1 {
+  margin-top: 100px;
+  font-size: 50px;
+  font-family: "Oswald";
+}
+main .short-team-nolife .container-streamers {
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 150px;
+}
+main .short-team-nolife-pres {
+  cursor: pointer;
+}
+main .short-team-nolife-pres .streamers {
+  display: flex;
+  flex-direction: column;
+}
+main .short-team-nolife-pres .streamers .logo-steamers1 {
+  height: 400px;
+  width: 300px;
+  background-image: url("../src/images/streamers/logo-kiuqsxn.png");
+  background-size: cover;
+  background-position: top center;
+  transition: 0.3s;
+}
+main .short-team-nolife-pres .streamers .logo-steamers1:hover {
+  background-image: url("../src/images/streamers/logo-kiuqsxn-hover.png");
+}
+main .short-team-nolife-pres .streamers .logo-steamers2 {
+  height: 400px;
+  width: 300px;
+  background-image: url("../src/images/streamers/logo-amobones.png");
+  background-size: cover;
+  background-position: top center;
+  transition: 0.3s;
+}
+main .short-team-nolife-pres .streamers .logo-steamers2:hover {
+  background-image: url("../src/images/streamers/logo-amobones-hover.png");
+}
+main .short-team-nolife-pres .streamers .logo-steamers3 {
+  height: 400px;
+  width: 300px;
+  background-image: url("../src/images/streamers/logo-mayucca.png");
+  background-size: cover;
+  background-position: top center;
+  transition: 0.3s;
+}
+main .short-team-nolife-pres .streamers .logo-steamers3:hover {
+  background-image: url("../src/images/streamers/logo-mayucca-hover.png");
+}
+main .short-team-nolife-pres .streamers .logo-steamers4 {
+  height: 400px;
+  width: 300px;
+  background-image: url("../src/images/streamers/logo-maevys.png");
+  background-size: cover;
+  background-position: top center;
+  transition: 0.3s;
+}
+main .short-team-nolife-pres .streamers .logo-steamers4:hover {
+  background-image: url("../src/images/streamers/logo-maevys-hover.png");
+}
+main .short-team-nolife-pres .streamers span {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-top: 15px;
+}
+main .short-team-nolife-pres .streamers .pseudo-streamers {
+  font-size: 24px;
+  font-family: "Oswald";
+  font-weight: bold;
+  margin-top: 0px;
+}
+main .short-team-nolife .view-more-streamers {
+  margin-top: 30px;
+  cursor: pointer;
+}
+main .short-team-nolife .view-more-streamers span {
+  font-size: 16px;
+  font-family: "Oswald";
+  font-weight: bold;
+  transition: 0.3s;
+  color: #000;
+}
+main .short-team-nolife .view-more-streamers div {
+  width: 20px;
+  border-bottom: 2px solid black;
+  transition: 0.3s;
+}
+main .short-team-nolife .view-more-streamers:hover span {
+  color: gray;
+}
+main .short-team-nolife .view-more-streamers:hover div {
+  width: 100%;
+}
+main .nolife-lvl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 250px;
+  background-color: rgb(226, 226, 226);
+}
+main .nolife-lvl h1 {
+  font-family: "Oswald";
+  font-size: 50px;
+  padding-top: 100px;
+}
+main .nolife-lvl p {
+  font-size: 20px;
+  width: 42%;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+main .nolife-lvl .lvl-container {
+  margin-top: 100px;
+  font-family: sans-serif;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+main .nolife-lvl .lvl-container .lvl {
+  padding: 30px;
+  transition: 0.3s;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .nolife-lvl .lvl-container .niveau {
+  font-size: 17px;
+}
+main .nolife-lvl .lvl-container h3 {
+  font-family: "Oswald";
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+main .nolife-lvl .lvl-container ul {
+  color: gray;
+  font-size: 20px;
+  width: 90%;
+  line-height: 25px;
+}
+main .nolife-lvl .lvl-container ul li {
+  margin-bottom: 5px;
+}
+main .nolife-lvl .lvl-container .more-infos {
+  margin-top: 20px;
+  font-family: "Oswald";
+  cursor: pointer;
+}
+main .nolife-lvl .lvl-container .more-infos div {
+  border-bottom: 2px solid #000;
+  width: 20px;
+  transition: 0.3s;
+}
+main .nolife-lvl .lvl-container .more-infos a {
+  color: #000;
+}
+main .nolife-lvl .lvl-container .lvl:hover {
+  background-color: #000;
+  color: #fff;
+}
+main .nolife-lvl .lvl-container .lvl:hover h3 {
+  border-color: #fff;
+}
+main .nolife-lvl .lvl-container .lvl:hover ul {
+  color: #fff;
+}
+main .nolife-lvl .lvl-container .lvl:hover .more-infos div {
+  border-color: #fff;
+}
+main .nolife-lvl .lvl-container .lvl:hover .more-infos a {
+  color: #fff;
+}
+main .nolife-lvl .lvl-container .more-infos:hover div {
+  border-color: #000;
+  width: 125px;
+}
+main .twitch-container {
+  position: relative;
+}
+main .twitch-container iframe {
+  position: absolute;
+  top: -200px;
+  right: 550px;
+}
+main .twitch-container-partner {
+  display: flex;
+  padding-top: 400px;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+main .twitch-container-partner img {
+  width: 250px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+main .twitch-container-partner img:hover {
+  transform: scale(1.2);
+}
+main .product-discord {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+main .product-discord .product {
+  height: 500px;
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../src/images/product.jpg");
+  background-size: 100%;
+  transition: 0.3s;
+}
+main .product-discord .product:hover {
+  background-size: 120%;
+}
+main .product-discord .product h3 {
+  color: #fff;
+  font-size: 65px;
+  font-family: "Oswald";
+}
+main .product-discord .product button {
+  padding: 20px 40px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Oswald";
+  margin-top: 50px;
+  font-size: 16px;
+}
+main .product-discord .product button div {
+  width: 0px;
+  border-bottom: solid 1px #fff;
+  transition: 0.3s;
+}
+main .product-discord .product button:hover div {
+  width: 110px;
+}
+main .product-discord .discord {
+  height: 500px;
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../src/images/discord.jpg");
+  background-size: 100%;
+  transition: 0.3s;
+}
+main .product-discord .discord:hover {
+  background-size: 120%;
+}
+main .product-discord .discord h3 {
+  color: #fff;
+  font-size: 65px;
+  font-family: "Oswald";
+}
+main .product-discord .discord button {
+  padding: 20px 40px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Oswald";
+  margin-top: 50px;
+  font-size: 16px;
+}
+main .product-discord .discord button div {
+  width: 0px;
+  border-bottom: solid 1px #fff;
+  transition: 0.3s;
+}
+main .product-discord .discord button:hover div {
+  width: 25px;
+}
+main .footer-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .footer-home img {
+  width: 350px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+main .footer-home div {
+  height: 90px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.banner-geek {
+  background-image: url("../src/images/niveau-geek/header.jpg");
+  background-size: 100%;
+  background-position: 0px -40px;
+  background-repeat: no-repeat;
+  height: 485px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-geek h1 {
+  font-size: 200px;
+  font-family: sans-serif;
+  color: transparent;
+  margin-top: 250px;
+  margin-left: 200px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 0.5px;
+}
+
+.geek-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.geek-container-avantages {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.geek-container-avantages img {
+  height: 40px;
+  width: 40px;
+  margin-right: 25px;
+}
+.geek-container-avantages .avantages {
+  display: flex;
+  flex-direction: row;
+}
+.geek-container-avantages .avantages div span {
+  font-family: "Oswald";
+  font-size: 20px;
+  font-weight: 600;
+}
+.geek-container-avantages .avantages div p {
+  margin-top: 20px;
+  width: 310px;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: sans-serif;
+  color: gray;
+}
+.geek-container .register-container {
+  margin-top: 100px;
+  padding-bottom: 150px;
+}
+.geek-container .register-container .register {
+  display: flex;
+  align-items: center;
+}
+.geek-container .register-container .register img:nth-child(1) {
+  width: 400px;
+  margin-right: 20px;
+}
+.geek-container .register-container .register img:nth-child(2) {
+  width: 250px;
+  margin-right: 40px;
+}
+.geek-container .register-container .register div span {
+  font-size: 45px;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+.geek-container .register-container .register div p {
+  margin-top: 20px;
+  font-family: sans-serif;
+  color: gray;
+  line-height: 30px;
+}
+.geek-container .register-container button {
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #FF675B;
+  border: none;
+  padding: 14px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.geek-container .register-container button:hover {
+  background-color: #ff4b3c;
+}
+
+.nolife-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.nolife-container-avantages {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.nolife-container-avantages .row {
+  display: flex;
+  flex-direction: row;
+}
+.nolife-container-avantages .row:nth-child(2) {
+  margin-top: 50px;
+}
+.nolife-container-avantages img {
+  height: 40px;
+  width: 40px;
+  margin-right: 25px;
+}
+.nolife-container-avantages .avantages {
+  display: flex;
+  flex-direction: row;
+}
+.nolife-container-avantages .avantages div span {
+  font-family: "Oswald";
+  font-size: 20px;
+  font-weight: 600;
+}
+.nolife-container-avantages .avantages div p {
+  margin-top: 20px;
+  width: 310px;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: sans-serif;
+  color: gray;
+}
+.nolife-container .register-container {
+  margin-top: 100px;
+  padding-bottom: 150px;
+}
+.nolife-container .register-container .register {
+  display: flex;
+  align-items: center;
+}
+.nolife-container .register-container .register img:nth-child(1) {
+  width: 400px;
+  margin-right: 20px;
+}
+.nolife-container .register-container .register img:nth-child(2) {
+  width: 250px;
+  margin-right: 40px;
+}
+.nolife-container .register-container .register div span {
+  font-size: 45px;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+.nolife-container .register-container .register div p {
+  margin-top: 20px;
+  font-family: sans-serif;
+  color: gray;
+  line-height: 30px;
+}
+.nolife-container .register-container button {
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #FF675B;
+  border: none;
+  padding: 14px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nolife-container .register-container button:hover {
+  background-color: #ff4b3c;
+}
+
+.partenaire-container {
+  max-width: 1135px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.partenaire-container h1 {
+  font-family: "Oswald";
+  font-size: 70px;
+  margin-top: 50px;
+}
+.partenaire-container .partner-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.partenaire-container .partner-details {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  text-align: left;
+  font-family: "Oswald";
+  margin-top: 50px;
+}
+.partenaire-container .partner-details img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.partenaire-container .partner-details .pseudo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.partenaire-container .partner-details .twitch {
+  background-color: #8D6DC4;
+  border: none;
+  padding: 10px 5px;
+  width: 125px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+  font-family: sans-serif;
+}
+.partenaire-container .partner-details .twitch i {
+  margin-left: 5px;
+}
+.partenaire-container .partner-details .twitch:hover {
+  background-color: #7c57bb;
+}
+
+.join-team-container {
+  max-width: 1135px;
+  margin: auto;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.join-team-container button {
+  background-color: #FF675B;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.join-team-container button:hover {
+  background-color: #ff4b3c;
+}
+.join-team-container span {
+  margin-top: 100px;
+  font-size: 60px;
+  font-family: "Oswald";
+  width: 50%;
+  text-align: center;
+}
+
+.error-form {
+  color: red;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Oswald";
+}
+
+.three-step {
+  display: none;
+}
+
+.button-div {
+  display: flex;
+}
+.button-div button {
+  background-color: #ff4242;
+  border: none;
+  color: #fff;
+  margin-top: 50px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Oswald";
+  font-size: 16px;
+  align-items: center;
+  cursor: pointer;
+}
+.button-div button:nth-child(1) {
+  margin-right: 10px;
+  display: none;
+}
+.button-div button:nth-child(1) i {
+  margin-left: 0px;
+  margin-right: 15px;
+}
+.button-div button:nth-child(2) i {
+  margin-left: 15px;
+}
+.button-div button:nth-child(3) {
+  display: none;
+  margin-right: 10px;
+}
+.button-div button:nth-child(3) i {
+  margin-left: 0px;
+  margin-right: 15px;
+}
+.button-div button:nth-child(4) {
+  display: none;
+}
+.button-div button:nth-child(4) i {
+  margin-left: 15px;
+}
+.button-div button:nth-child(5) {
+  display: none;
+}
+.button-div button:nth-child(5) i {
+  margin-left: 15px;
+}
+
+.second-step {
+  display: none;
+  flex-direction: column;
+  font-family: "Oswald";
+  margin-top: 40px;
+}
+
+#list-checkbox {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#list-checkbox div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+}
+#list-checkbox div input[type=checkbox] {
+  margin-right: 10px;
+  width: 23px;
+  height: 23px;
+  border-radius: 0px;
+}
+#list-checkbox div input[type=checkbox]:checked {
+  background-color: red;
+  color: red;
+}
+
+.formulaire-container {
+  max-width: 1130px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+.formulaire-container h1 {
+  font-family: "Oswald";
+  font-size: 50px;
+  margin-top: 50px;
+}
+.formulaire-container .form-formulaire {
+  margin-top: 120px;
+}
+.formulaire-container .form-formulaire span {
+  font-size: 25px;
+  font-family: "Oswald";
+}
+.formulaire-container .form-formulaire form {
+  margin-top: 20px;
+}
+.formulaire-container .form-formulaire form .three-step div {
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald";
+  position: relative;
+  margin-top: 40px;
+}
+.formulaire-container .form-formulaire form .three-step div label {
+  font-size: 18px;
+}
+.formulaire-container .form-formulaire form .three-step div label span {
+  color: red;
+  margin-left: 5px;
+}
+.formulaire-container .form-formulaire form .three-step div input {
+  border: 1px solid #ddd;
+  font-size: 13px;
+  padding: 15px;
+  margin-top: 15px;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+.formulaire-container .form-formulaire form .three-step div input:focus {
+  outline: none;
+  border: 1px solid #ddd;
+}
+.formulaire-container .form-formulaire form .three-step div i {
+  position: absolute;
+  top: 58px;
+  left: 10px;
+  color: #bbb;
+  border-right: 1px solid #bbb;
+  font-size: 15px;
+  padding-right: 10px;
+}
+.formulaire-container .form-formulaire form .first-step div {
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald";
+  position: relative;
+  margin-top: 40px;
+}
+.formulaire-container .form-formulaire form .first-step div label {
+  font-size: 18px;
+}
+.formulaire-container .form-formulaire form .first-step div label span {
+  color: red;
+  margin-left: 5px;
+}
+.formulaire-container .form-formulaire form .first-step div input {
+  border: 1px solid #ddd;
+  font-size: 13px;
+  padding: 15px;
+  margin-top: 15px;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+.formulaire-container .form-formulaire form .first-step div input:focus {
+  outline: none;
+  border: 1px solid #ddd;
+}
+.formulaire-container .form-formulaire form .first-step div textarea {
+  border: 1px solid #ddd;
+  font-size: 13px;
+  padding: 15px;
+  margin-top: 15px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  height: 300px;
+  resize: none;
+}
+.formulaire-container .form-formulaire form .first-step div textarea:focus {
+  outline: none;
+  border: 1px solid #ddd;
+}
+.formulaire-container .form-formulaire form .first-step div i {
+  position: absolute;
+  top: 68px;
+  left: 10px;
+  color: #bbb;
+  border-right: 1px solid #bbb;
+  font-size: 15px;
+  padding-right: 10px;
+}
+.formulaire-container .form-formulaire form .button-nextForm {
+  background-color: #ff4242;
+  border: none;
+  color: #fff;
+  margin-top: 50px;
+  padding: 8px 30px;
+  padding-right: 15px;
+  font-family: "Oswald";
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.formulaire-container .form-formulaire form .button-nextForm i {
+  margin-left: 15px;
+}
+.formulaire-container .form-formulaire form .button-nextForm:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 900px) {
+  #nav-bar {
+    display: none !important;
+  }
+  #nav-bar-mobile {
+    display: flex;
+    width: 90%;
+  }
+  #nav-bar-mobile .burger-container {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    top: 71px;
+    z-index: 100;
+    background-color: gray;
+    left: 0;
+    font-family: "Oswald";
+    border-top: 2px solid red;
+    padding-bottom: 20px;
+  }
+  #nav-bar-mobile .burger-container a {
+    margin-top: 15px;
+    color: #fff;
+  }
+  #nav-bar-mobile .burger-container .burger-lvl-mobile {
+    display: flex;
+    align-items: center;
+  }
+  #nav-bar-mobile .burger-container .burger-lvl-mobile i {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  #nav-bar-mobile .burger-container .burger-mobile-lvl {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+  }
+  #nav-bar-mobile .burger-container .burger-mobile-lvl a:nth-child(3) {
+    margin-bottom: 15px;
+  }
+  .enter-container {
+    height: 100% !important;
+  }
+  .enter-container #myVideo {
+    min-height: auto !important;
+  }
+  .enter-container-content img {
+    width: 125px !important;
+    margin-top: 40px;
+  }
+  .enter-container-content h1 {
+    font-size: 20px !important;
+    width: 90% !important;
+    margin-top: 40px !important;
+    margin-bottom: 60px;
+  }
+  .join-team-nolife {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .join-team-nolife-info {
+    width: 90% !important;
+    margin: auto;
+    margin-left: 15px !important;
+  }
+  .join-team-nolife-info h2 {
+    font-size: 24px !important;
+  }
+  .join-team-nolife-info p {
+    font-size: 16px !important;
+  }
+  .join-team-nolife-info button {
+    display: flex;
+    margin: auto;
+  }
+  .join-team-nolife-img {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  .join-team-nolife-img img:nth-child(1) {
+    position: static !important;
+    width: 350px !important;
+    height: 350px !important;
+  }
+  .join-team-nolife-img img:nth-child(2) {
+    width: 300px !important;
+    height: 400px !important;
+    margin-top: 20px;
+  }
+  .short-team-nolife .container-streamers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nolife-lvl p {
+    width: 90% !important;
+  }
+  .nolife-lvl .lvl-container {
+    flex-direction: column;
+  }
+  .nolife-lvl .lvl-container .lvl {
+    margin-top: 20px;
+  }
+  .twitch-container iframe {
+    position: static !important;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    height: 300px;
+    margin-top: 20px;
+  }
+  .twitch-container .twitch-container-partner {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px !important;
+  }
+  .product-discord {
+    flex-direction: column;
+  }
+  .product-discord .product {
+    width: auto !important;
+  }
+  .product-discord .discord {
+    width: auto !important;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .banner-geek {
+    background-size: auto;
+  }
+  .banner-geek h1 {
+    font-size: 100px !important;
+    margin-left: 10px !important;
+    margin-top: 0px !important;
+  }
+  .geek-container-avantages {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px !important;
+  }
+  .avantages:nth-child(2) {
+    margin-top: 40px;
+  }
+  .avantages:nth-child(3) {
+    margin-top: 40px;
+  }
+  .avantages:nth-child(4) {
+    margin-top: 40px;
+  }
+  .register-container {
+    margin-top: 50px !important;
+  }
+  .register-container .register {
+    flex-direction: column;
+  }
+  .register-container .register img:nth-child(1) {
+    width: 300px !important;
+    margin-right: 0px !important;
+  }
+  .register-container .register img:nth-child(2) {
+    margin-right: 0px !important;
+    margin-top: 20px;
+  }
+  .register-container .register div {
+    width: 85%;
+    margin-top: 40px;
+  }
+  .register-container button {
+    margin-top: 40px;
+  }
+  .nolife-container-avantages .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .partenaire-container h1 {
+    text-align: center;
+    font-size: 50px !important;
+  }
+  .partenaire-container .partner-container {
+    justify-content: center;
+  }
+  .join-team-container span {
+    width: 90%;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .join-team-nolife-img img:nth-child(1) {
+    width: 300px !important;
+    height: 300px !important;
+    right: 350px !important;
+  }
+  .join-team-nolife-img img:nth-child(2) {
+    width: 400px !important;
+    height: 600px !important;
+  }
+  .twitch-container iframe {
+    right: 350px !important;
+  }
+  .banner-geek h1 {
+    font-size: 160px !important;
+  }
+  .geek-container-avantages {
+    flex-wrap: wrap;
+  }
+  .geek-container-avantages .avantages:nth-child(4) {
+    margin-top: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

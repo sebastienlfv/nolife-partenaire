@@ -1,0 +1,34 @@
+@media screen and (max-width: 1650px) {
+  .join-team-nolife-img {
+    img:nth-child(1) {
+      width: 300px !important;
+      height: 300px !important;
+      right: 350px !important;
+    }
+  
+    img:nth-child(2) {
+      width: 400px !important;
+      height: 600px !important;
+    }
+  }
+
+  .twitch-container {
+    iframe {
+      right: 350px !important;
+    }
+  }
+
+  .banner-geek {
+    h1 {
+      font-size: 160px !important;
+    }
+  }
+
+  .geek-container-avantages {
+    flex-wrap: wrap;
+
+    .avantages:nth-child(4) {
+      margin-top: 40px;
+    }
+  }
+}

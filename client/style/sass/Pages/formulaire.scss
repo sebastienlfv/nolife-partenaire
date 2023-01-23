@@ -1,0 +1,249 @@
+.error-form {
+  color: red;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Oswald";
+}
+
+.three-step {
+  display: none;
+}
+
+.button-div {
+  display: flex;
+
+  button {
+    background-color: #ff4242;
+    border: none;
+    color: #fff;
+    margin-top: 50px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Oswald";
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  button:nth-child(1) {
+    margin-right: 10px;
+    display: none;
+
+    i {
+      margin-left: 0px;
+      margin-right: 15px;
+    }
+  }
+
+  button:nth-child(2) {
+    i {
+      margin-left: 15px;
+    }
+  }
+
+  button:nth-child(3) {
+    display: none;
+    margin-right: 10px;
+
+    i {
+      margin-left: 0px;
+      margin-right: 15px;
+    }
+  }
+
+  button:nth-child(4) {
+    display: none;
+
+    i {
+      margin-left: 15px;
+    }
+  }
+
+  button:nth-child(5) {
+    display: none;
+
+    i {
+      margin-left: 15px;
+    }
+  }
+}
+
+.second-step {
+  display: none;
+  flex-direction: column;
+  font-family: 'Oswald';
+  margin-top: 40px;  
+}
+
+#list-checkbox {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;  
+
+    input[type=checkbox] {
+      margin-right: 10px;
+      width: 23px;
+      height: 23px;
+      border-radius: 0px;
+    }
+
+    input[type=checkbox]:checked {
+      background-color: red;
+      color: red;
+    }
+
+
+  }
+}
+
+.formulaire-container {
+  max-width: 1130px;
+  margin: auto;
+  padding-bottom: 100px;
+
+  h1 {
+    font-family: 'Oswald';
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+  .form-formulaire {
+    margin-top: 120px;
+
+    span {
+      font-size: 25px;
+      font-family: 'Oswald';
+    }
+
+    form {
+      margin-top: 20px;
+
+      .three-step div {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Oswald';
+        position: relative;
+        margin-top: 40px;
+
+        label {
+          font-size: 18px;
+
+          span {
+            color: red;
+            margin-left: 5px;
+          }
+        }
+
+        input {
+          border: 1px solid #ddd;
+          font-size: 13px;
+          padding: 15px;
+          margin-top: 15px;
+          box-sizing: border-box;
+          padding-left: 50px;
+
+          &:focus {
+            outline: none;
+            border: 1px solid #ddd;
+          }
+        }
+
+        i {
+          position: absolute;
+          top: 58px;
+          left: 10px;
+          color: #bbb;
+          border-right: 1px solid #bbb;
+          font-size: 15px;
+          padding-right: 10px;
+        }
+      }
+
+      .first-step div {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Oswald';
+        position: relative;
+        margin-top: 40px;
+
+        label {
+          font-size: 18px;
+
+          span {
+            color: red;
+            margin-left: 5px;
+          }
+        }
+
+        input {
+          border: 1px solid #ddd;
+          font-size: 13px;
+          padding: 15px;
+          margin-top: 15px;
+          box-sizing: border-box;
+          padding-left: 50px;
+
+          &:focus {
+            outline: none;
+            border: 1px solid #ddd;
+          }
+        }
+
+        textarea {
+          border: 1px solid #ddd;
+          font-size: 13px;
+          padding: 15px;
+          margin-top: 15px;
+          box-sizing: border-box;
+          padding-left: 50px;
+          height: 300px;
+          resize: none;
+
+          &:focus {
+            outline: none;
+            border: 1px solid #ddd;
+          }
+        }
+
+        i {
+          position: absolute;
+          top: 68px;
+          left: 10px;
+          color: #bbb;
+          border-right: 1px solid #bbb;
+          font-size: 15px;
+          padding-right: 10px;
+        }
+      }
+
+      .button-nextForm {
+        background-color: #ff4242;
+        border: none;
+        color: #fff;
+        margin-top: 50px;
+        padding: 8px 30px;
+        padding-right: 15px;
+        font-family: 'Oswald';
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        i {
+          margin-left: 15px;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

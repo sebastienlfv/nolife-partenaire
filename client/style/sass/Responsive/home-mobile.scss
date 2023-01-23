@@ -1,0 +1,167 @@
+@media screen and (max-width: 900px) {
+  #nav-bar {
+    display: none !important;
+  }
+
+  #nav-bar-mobile {
+    display: flex;
+    width: 90%;
+
+    .burger-container {
+      position: absolute;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      top: 71px;
+      z-index: 100;
+      background-color: gray;
+      left: 0;
+      font-family: 'Oswald';
+      border-top: 2px solid red;
+      padding-bottom: 20px;
+
+      a {
+        margin-top: 15px;
+        color: #fff;
+      }
+
+      .burger-lvl-mobile {
+        display: flex;
+        align-items: center;
+
+        i {
+          margin-left: 10px;
+          font-size: 14px;
+        }
+      }
+
+      .burger-mobile-lvl {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(65, 65, 65);
+        width: 100%;
+
+        a:nth-child(3) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  
+  .enter-container {
+    height: 100% !important;
+
+    #myVideo {
+      min-height: auto !important;
+    }
+
+    &-content {
+      img {
+        width: 125px !important;
+        margin-top: 40px;
+      }
+
+      h1 {
+        font-size: 20px !important;
+        width: 90% !important;
+        margin-top: 40px !important;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .join-team-nolife {
+    width: 100% !important;
+    flex-direction: column;
+
+    &-info {
+      width: 90% !important;
+      margin: auto;
+      margin-left: 15px !important;
+
+      h2 {
+        font-size: 24px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+      }
+
+      button {
+        display: flex;
+        margin: auto;
+      }
+    }
+
+    &-img {
+      flex-direction: column;
+      margin-top: 80px;
+
+      img:nth-child(1) {
+        position: static !important;
+        width: 350px !important;
+        height: 350px !important;
+      }
+
+      img:nth-child(2) {
+        width: 300px !important;
+        height: 400px !important;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .short-team-nolife {
+    .container-streamers {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .nolife-lvl {
+    p {
+      width: 90% !important;
+    }
+
+    .lvl-container {
+      flex-direction: column;
+
+      .lvl {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .twitch-container {
+
+    iframe {
+      position: static !important;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      height: 300px;
+      margin-top: 20px;
+    }
+
+    .twitch-container-partner {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px !important;
+    }
+  }
+
+  .product-discord {
+    flex-direction: column;
+
+    .product {
+      width: auto !important;
+    }
+
+    .discord {
+      width: auto !important;
+      margin-top: 20px;
+    }
+  }
+}
