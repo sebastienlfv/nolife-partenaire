@@ -339,7 +339,6 @@ main .nolife-lvl .lvl-container .lvl {
   height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 main .nolife-lvl .lvl-container .niveau {
   font-size: 17px;
