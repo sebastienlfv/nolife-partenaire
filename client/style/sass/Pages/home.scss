@@ -37,6 +37,8 @@ header {
   display: flex;
   background-color: #fff;
   border-bottom: 1px solid #d7d7d7;
+
+  
   nav {
     display: flex;
     width: 59%;
@@ -385,10 +387,22 @@ main {
 
       .lvl {
         padding: 30px;
-        transition: 0.3s;
+        transition: 0.5s;
         height: 400px;
         display: flex;
         flex-direction: column;
+        position: relative;
+      }
+
+      .number {
+        position: absolute;
+        color: #666d70;
+        font-size: 200px;
+        z-index: 0;
+        font-family:'Oswald';
+        opacity: 0.12;
+        top: -40px;
+        font-weight: bold;
       }
 
       .niveau {
@@ -402,6 +416,7 @@ main {
         margin-bottom: 20px;
         border-bottom: 2px solid #000;
         padding-bottom: 10px;
+        z-index: 2;
       }
 
       ul {
@@ -409,6 +424,7 @@ main {
         font-size: 20px;
         width: 90%;
         line-height: 25px;
+        z-index: 2;
 
         li {
           margin-bottom: 5px;
@@ -434,6 +450,11 @@ main {
       .lvl:hover {
         background-color: #000;
         color: #fff;
+
+        .number {
+          color: #fff;
+          opacity: 0.12;
+        }
 
         h3 {
           border-color: #fff;
@@ -504,12 +525,12 @@ main {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-image: url('../src/images/product.jpg');
-      background-size: 100%;
+      background: url('../src/images/product.jpg') center center;
+      background-size: 130%;
       transition: 0.3s;
 
       &:hover {
-        background-size: 120%;
+        background-size: 150%;
       }
 
       h3 {
@@ -549,12 +570,12 @@ main {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-image: url('../src/images/discord.jpg');
-      background-size: 100%;
+      background: url('../src/images/discord.jpg') center center;
+      background-size: 130%;
       transition: 0.3s;
 
       &:hover {
-        background-size: 120%;
+        background-size: 150%;
       }
 
       h3 {

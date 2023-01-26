@@ -287,4 +287,11 @@ linkTiktok: linkTiktok };
     .catch(error => {
       console.log("Erreur lors de l'envoi des données : ", error);
     });
+
+    errorForm.innerHTML = 'Fomurlaire validé et envoyé !'
+    errorForm.style.color = 'green'
+
+    setTimeout(() => {
+      window.location.href = '../index.html'
+    }, 1000)
 });

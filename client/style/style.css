@@ -2,6 +2,14 @@
   font-family: "Oswald";
   src: url("../src/font/Oswald.ttf");
 }
+@keyframes images-animation-home {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 400px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -335,10 +343,21 @@ main .nolife-lvl .lvl-container {
 }
 main .nolife-lvl .lvl-container .lvl {
   padding: 30px;
-  transition: 0.3s;
+  transition: 0.5s;
   height: 400px;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+main .nolife-lvl .lvl-container .number {
+  position: absolute;
+  color: #666d70;
+  font-size: 200px;
+  z-index: 0;
+  font-family: "Oswald";
+  opacity: 0.12;
+  top: -40px;
+  font-weight: bold;
 }
 main .nolife-lvl .lvl-container .niveau {
   font-size: 17px;
@@ -350,12 +369,14 @@ main .nolife-lvl .lvl-container h3 {
   margin-bottom: 20px;
   border-bottom: 2px solid #000;
   padding-bottom: 10px;
+  z-index: 2;
 }
 main .nolife-lvl .lvl-container ul {
   color: gray;
   font-size: 20px;
   width: 90%;
   line-height: 25px;
+  z-index: 2;
 }
 main .nolife-lvl .lvl-container ul li {
   margin-bottom: 5px;
@@ -376,6 +397,10 @@ main .nolife-lvl .lvl-container .more-infos a {
 main .nolife-lvl .lvl-container .lvl:hover {
   background-color: #000;
   color: #fff;
+}
+main .nolife-lvl .lvl-container .lvl:hover .number {
+  color: #fff;
+  opacity: 0.12;
 }
 main .nolife-lvl .lvl-container .lvl:hover h3 {
   border-color: #fff;
@@ -429,12 +454,12 @@ main .product-discord .product {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../src/images/product.jpg");
-  background-size: 100%;
+  background: url("../src/images/product.jpg") center center;
+  background-size: 130%;
   transition: 0.3s;
 }
 main .product-discord .product:hover {
-  background-size: 120%;
+  background-size: 150%;
 }
 main .product-discord .product h3 {
   color: #fff;
@@ -466,12 +491,12 @@ main .product-discord .discord {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../src/images/discord.jpg");
-  background-size: 100%;
+  background: url("../src/images/discord.jpg") center center;
+  background-size: 130%;
   transition: 0.3s;
 }
 main .product-discord .discord:hover {
-  background-size: 120%;
+  background-size: 150%;
 }
 main .product-discord .discord h3 {
   color: #fff;
