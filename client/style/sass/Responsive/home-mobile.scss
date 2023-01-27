@@ -156,12 +156,22 @@
     flex-direction: column;
 
     .product {
-      width: auto !important;
+      width: 90% !important;
+      background-size: 210% !important;
+
+      h3 {
+        font-size: 50px !important;
+      }
     }
 
     .discord {
-      width: auto !important;
+      width: 90% !important;
+      background-size: 210% !important;
       margin-top: 20px;
+
+      h3 {
+        font-size: 50px !important;
+      }
     }
   }
 }

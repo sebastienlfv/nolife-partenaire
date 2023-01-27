@@ -60,10 +60,20 @@ header nav {
 header nav img {
   height: 28px;
 }
+header nav .reseaux-right-nav {
+  font-family: "Oswald";
+  font-weight: bold;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .reseaux-right-nav a {
+  color: #000;
+}
 header nav .nav-bar-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-family: "Oswald";
   font-weight: bold;
   width: 70%;
@@ -1135,11 +1145,19 @@ main .footer-home div {
     flex-direction: column;
   }
   .product-discord .product {
-    width: auto !important;
+    width: 90% !important;
+    background-size: 210% !important;
+  }
+  .product-discord .product h3 {
+    font-size: 50px !important;
   }
   .product-discord .discord {
-    width: auto !important;
+    width: 90% !important;
+    background-size: 210% !important;
     margin-top: 20px;
+  }
+  .product-discord .discord h3 {
+    font-size: 50px !important;
   }
 }
 @media screen and (max-width: 900px) {
