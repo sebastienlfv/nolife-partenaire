@@ -1245,5 +1245,28 @@ main .footer-home div {
     margin-top: 40px;
   }
 }
+@media screen and (max-width: 1500px) {
+  .container-streamers {
+    gap: 50px !important;
+  }
+  .banner-geek h1 {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .container-streamers {
+    gap: 50px !important;
+  }
+  .container-streamers .streamers a {
+    height: 350px !important;
+    width: 250px !important;
+  }
+  .twitch-container iframe {
+    right: 250px !important;
+  }
+  .banner-geek h1 {
+    margin-top: 150px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
