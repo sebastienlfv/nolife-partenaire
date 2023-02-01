@@ -1,2 +1,12 @@
+Options +FollowSymlinks
+
 RewriteEngine On
-RewriteRule ^/index.html$ /home [R=301,L]
+
+RewriteRule ^css/(.*)$ /partenaires/client/src/style/style.css/$1 [L]
+
+RewriteRule ^/$ /partenaires/index.html [L]
+RewriteRule ^formulaire$ /partenaires/client/formulaire.html [L]
+RewriteRule ^team-nolife$ /partenaires/client/team.html [L]
+RewriteRule ^niveau-geek$ /partenaires/client/niveau-geek.html [L]
+RewriteRule ^niveau-nolife$ /partenaires/client/niveau-nolife.html [L]
+RewriteRule ^niveau-pgm$ /partenaires/client/niveau-pgm.html [L]
